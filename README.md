@@ -2,7 +2,7 @@
 
 This workflow counts the occurrences of words in a text corpus. It implements a Cuneiform example workflow first published in [Bux et al. 2015](http://cuneiform-lang.org/publications/bux_saasfee_vldb_2015.pdf).
 
-A detailed description can be found on the [Cuneiform website](http://cuneiform-lang.org/examples/2016/07/31/wordcount/). This cookbook installs all necessary tools, downloads all necessary data, sets up Cuneiform, and places the [workflow](https://github.com/joergen7/wordcount/blob/master/templates/default/wordcount.cf.erb) in a predetermined location. The cookbook can be run on any system in a virtual machine. For running the cookbook natively, an Ubuntu 16.04 or higher is required.
+A detailed description can be found on the [Cuneiform website](http://cuneiform-lang.org/examples/2016/07/31/wordcount/). This cookbook installs all necessary tools, downloads all necessary data, sets up Cuneiform, and places the [workflow](https://github.com/joergen7/wordcount/blob/master/templates/wordcount.cf.erb) in a predetermined location. The cookbook can be run on any system in a virtual machine. For running the cookbook natively, an Ubuntu 16.04 or higher is required.
 
 Below you find installation instructions for, both, the native and the virtual machine setup.
 
