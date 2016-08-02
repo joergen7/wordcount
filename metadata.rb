@@ -6,5 +6,4 @@ description 'Installs/Configures wordcount'
 long_description 'Installs/Configures wordcount'
 version '0.1.0'
 
-depends "chef-bioinf-worker"
 depends "chef-cuneiform"
