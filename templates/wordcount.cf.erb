@@ -13,7 +13,7 @@ deftask count( csv( File ) : txt( File ) ) in bash *{
   tr ' ' '\n' < $txt | sort | uniq -c -i > $csv
 }*
 
-deftask groupby( ret( File ) : <csv( File )> ) in bash *{
+deftask join( ret( File ) : <csv( File )> ) in bash *{
   ret=ret.csv
   cat ${csv[@]} | awk '{a[$2]+=$1}END{for(i in a) print a[i],i}' > $ret
 }*
@@ -21,6 +21,6 @@ deftask groupby( ret( File ) : <csv( File )> ) in bash *{
 sotu = "sotu/stateoftheunion1790-2014.txt.zip";
 
 fileLst = split( file: unzip( zip: sotu ) );
-result  = groupby( csv: count( txt: fileLst ) );
+result  = join( csv: count( txt: fileLst ) );
 
 result;
