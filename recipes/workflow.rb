@@ -8,6 +8,6 @@
 directory node["dir"]["wf"]
 
 # place workflow
-template "#{node["dir"]["wf"]}/wordcount.cf" do
-  source "wordcount.cf.erb"
+template "#{node["dir"]["wf"]}/wordcount.cfl" do
+  source "wordcount.cfl.erb"
 end

@@ -70,7 +70,7 @@ If you installed the workflow on a VM log into the machine by typing
     
 Execute the workflow script by entering
 
-    cuneiform -w /opt/data /opt/wf/wordcount.cf
+    cuneiform -d /opt/data /opt/wf/wordcount.cfl
     
     
 

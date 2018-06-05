@@ -14,5 +14,5 @@ run_list "wordcount::default"
 
 # Specify a custom source for a single cookbook:
 cookbook "wordcount", path: "."
-cookbook "chef-cuneiform", git: "https://github.com/joergen7/chef-cuneiform.git"
-cookbook "chef-misc", git: "https://github.com/joergen7/chef-misc.git"
+cookbook "chef-cuneiform", "0.1.3", git: "https://github.com/joergen7/chef-cuneiform.git"
+cookbook "chef-misc", "0.1.1", git: "https://github.com/joergen7/chef-misc.git"
